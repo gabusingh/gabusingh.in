@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: `Portfolio Contact <${fromEmail}>`,
       to: [toEmail],
-      replyTo: email,
+      reply_to: email,
       subject: `Contact Form: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
