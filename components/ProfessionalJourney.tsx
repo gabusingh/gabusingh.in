@@ -18,7 +18,7 @@ const journeyItems: JourneyItem[] = [
     year: '2011 - Present',
     title: 'Founder & Lead Developer',
     organization: 'WPFreelance',
-    description: 'Founded and scaled a specialist team delivering WordPress, web, and mobile solutions to international clients. Managed 1955+ projects with 860+ satisfied customers. Leading the company\'s strategic direction, team development, and client relationships.',
+    description: 'Founded and scaled a specialist team delivering WordPress, web, and mobile solutions to international clients. Managed 1955+ projects with 300+ satisfied customers. Leading the company\'s strategic direction, team development, and client relationships.',
     icon: Code,
     achievements: [
       'Managed 2000+ projects successfully',
@@ -191,12 +191,12 @@ export default function ProfessionalJourney() {
         >
           <div className="bg-white dark:bg-gray-900 rounded-xl p-6 text-center shadow-lg">
             <Award className="text-primary-600 dark:text-primary-400 mx-auto mb-2" size={32} />
-            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">1955+</div>
+            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">1000+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Projects Managed</div>
           </div>
           <div className="bg-white dark:bg-gray-900 rounded-xl p-6 text-center shadow-lg">
             <Users className="text-primary-600 dark:text-primary-400 mx-auto mb-2" size={32} />
-            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">860+</div>
+            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">300+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Satisfied Customers</div>
           </div>
           <div className="bg-white dark:bg-gray-900 rounded-xl p-6 text-center shadow-lg">

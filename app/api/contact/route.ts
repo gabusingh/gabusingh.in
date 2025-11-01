@@ -29,8 +29,8 @@ export async function POST(request: NextRequest) {
       // In development, you can log the email instead
       if (process.env.NODE_ENV === 'development') {
         console.log('Email would be sent:', {
-          to: process.env.CONTACT_EMAIL || 'email@wpfreelance.in',
-          from: 'email@wpfreelance.in',
+          to: process.env.CONTACT_EMAIL || 'hello@gabusingh.in',
+          from: 'noreply@gabusingh.in',
           subject: `Contact Form: ${subject}`,
           html: `
             <h2>New Contact Form Submission</h2>
@@ -56,9 +56,9 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const resend = new Resend(resendApiKey)
 
-    // Domain verified - can send to any recipient using verified domain email
-    const toEmail = process.env.CONTACT_EMAIL || 'email@wpfreelance.in'
-    const fromEmail = process.env.FROM_EMAIL || 'email@wpfreelance.in'
+    // Domain verified (gabusingh.in) - can send to any recipient using verified domain email
+    const toEmail = process.env.CONTACT_EMAIL || 'hello@gabusingh.in'
+    const fromEmail = process.env.FROM_EMAIL || 'noreply@gabusingh.in'
 
     try {
       const { data, error } = await resend.emails.send({
