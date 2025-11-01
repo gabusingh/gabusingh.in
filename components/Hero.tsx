@@ -55,9 +55,9 @@ export default function Hero() {
             variants={itemVariants}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900 dark:text-white"
           >
-            Hi, I'm{' '}
+            WordPress Developer & White-Label Partner for{' '}
             <span className="bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">
-              Pradipta Sinha
+              Small Businesses & Agencies
             </span>
           </motion.h1>
 
@@ -65,8 +65,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
           >
-            I create custom WordPress solutions, build WooCommerce stores, and optimize websites
-            for search engines & AI agents. Let's bring your digital vision to life.
+            I help small businesses grow online and partner with web design agencies for white-label WordPress development. Custom solutions, WooCommerce stores, and SEO services that deliver results.
           </motion.p>
 
           <motion.div

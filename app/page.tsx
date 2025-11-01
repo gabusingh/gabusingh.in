@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio'
+import ProfessionalJourney from '@/components/ProfessionalJourney'
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Header from '@/components/Header'
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <ProfessionalJourney />
       <Services />
       <Portfolio />
       <Testimonials />

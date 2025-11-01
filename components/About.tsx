@@ -1,12 +1,19 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code, Search, ShoppingCart, Palette, Zap, Shield } from 'lucide-react'
+import { Code, Search, ShoppingCart, Palette, Zap, Shield, Server, Cpu, Layers, Mail, Store, Globe, Cloud } from 'lucide-react'
 
 export default function About() {
   const skills = [
     { icon: Code, name: 'WordPress Development', level: 95 },
     { icon: ShoppingCart, name: 'WooCommerce', level: 90 },
+    { icon: Store, name: 'Shopify', level: 85 },
+    { icon: Globe, name: 'Squarespace', level: 85 },
+    { icon: Layers, name: 'Next.js', level: 88 },
+    { icon: Cpu, name: 'React', level: 90 },
+    { icon: Server, name: 'Node.js', level: 85 },
+    { icon: Cloud, name: 'AWS & Cloud', level: 85 },
+    { icon: Mail, name: 'Resend (Email Services)', level: 85 },
     { icon: Search, name: 'SEO Optimization', level: 88 },
     { icon: Palette, name: 'Custom Themes', level: 92 },
     { icon: Zap, name: 'Performance', level: 90 },
@@ -14,7 +21,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-white dark:bg-gray-900">
+    <section id="about" itemScope itemType="https://schema.org/Person" className="py-20 md:py-32 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,23 +30,25 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 itemProp="name" className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-blue-600 mx-auto mb-8" />
-          <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            I'm a passionate WordPress developer and SEO specialist with years of experience
-            creating custom solutions for businesses worldwide. Through my agency{' '}
+          <p itemProp="description" className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            I'm <span itemProp="name">Pradipta Sinha</span>, a passionate <span itemProp="jobTitle">WordPress developer and SEO specialist</span> with years of experience
+            creating custom solutions for small businesses and partnering with web design agencies worldwide. Through my agency{' '}
             <a
               href="https://wpfreelance.in"
               target="_blank"
               rel="noopener noreferrer"
+              itemProp="worksFor"
+              itemScope
+              itemType="https://schema.org/Organization"
               className="text-primary-600 dark:text-primary-400 hover:underline font-semibold"
             >
-              WPFreelance
+              <span itemProp="name">WPFreelance</span>
             </a>
-            , I help clients transform their digital presence with modern, fast, and
-            SEO-optimized websites.
+            , I help small businesses grow their online presence and provide white-label WordPress development services to agencies looking to outsource with confidence.
           </p>
         </motion.div>
 
@@ -114,11 +123,26 @@ export default function About() {
               </div>
               <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
                 <h4 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">
+                  Modern Web Development
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Full-stack web applications using Next.js, React, and Node.js. Building fast, scalable, and SEO-friendly modern websites with email service integration using Resend.
+                </p>
+              </div>
+              <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
+                <h4 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">
                   E-Commerce Solutions
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Complete WooCommerce store development with payment integration, inventory
-                  management, and custom features.
+                  Complete e-commerce store development on WooCommerce, Shopify, and Squarespace with payment integration, inventory management, and custom features. AWS cloud infrastructure deployment and management.
+                </p>
+              </div>
+              <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
+                <h4 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">
+                  White-Label Services for Agencies
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Perfect outsourcing partner for web design agencies. White-label WordPress development services that let you scale without hiring. Your clients see your brand, not mine.
                 </p>
               </div>
               <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">

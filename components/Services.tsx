@@ -17,19 +17,19 @@ const services = [
     icon: Code2,
     title: 'Custom WordPress Development',
     description:
-      'Bespoke WordPress themes and plugins built from scratch, tailored to your specific requirements and brand identity.',
+      'I build WordPress themes and plugins from scratch that match exactly what you need. Everything is designed around your brand and specific requirements.',
   },
   {
     icon: ShoppingBag,
-    title: 'WooCommerce Solutions',
+    title: 'E-Commerce Solutions',
     description:
-      'Complete e-commerce store setup with payment gateways, shipping options, product management, and custom functionality.',
+      'I set up complete e-commerce stores on WooCommerce, Shopify, and Squarespace with payment gateways, shipping options, coupon management, Google Shopping and Facebook Shopping integration, invoice generation, inventory management, product management, and custom functionality. AWS or other cloud deployment included.',
   },
   {
     icon: Search,
-    title: 'SEO Optimization',
+    title: 'Advanced SEO & Analytics',
     description:
-      'Comprehensive SEO audits, on-page optimization, technical SEO, and strategies to improve your search engine rankings.',
+      'Technical & on-page SEO audits, GA4 integration, GTM setup, and data-driven optimization strategies. Comprehensive traditional SEO combined with modern AI agents optimization, geo-targeting, and voice search strategies.',
   },
   {
     icon: Palette,
@@ -41,13 +41,13 @@ const services = [
     icon: Zap,
     title: 'Performance Optimization',
     description:
-      'Speed up your website with code optimization, caching strategies, image optimization, and CDN integration.',
+      'I speed up your website with code optimization, server-level caching mechanisms, MySQL query tuning, database cleanup (removing bloated options), image optimization, CDN integration, and caching strategies that make everything load faster.',
   },
   {
     icon: Shield,
     title: 'Security & Maintenance',
     description:
-      'Regular security updates, malware scanning, backups, and ongoing maintenance to keep your site safe and running smoothly.',
+      'I provide immediate malware cleanup and 24/7 availability during critical security incidents. After cleanup, I implement comprehensive security hardening to prevent future attacks, along with regular updates, scanning, and backups.',
   },
   {
     icon: Smartphone,
@@ -75,11 +75,11 @@ export default function Services() {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-            Services I Offer
+            Core Expertise
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-blue-600 mx-auto mb-8" />
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Comprehensive WordPress solutions tailored to your business needs
+            Specialized services designed to elevate your digital presence and drive measurable results
           </p>
         </motion.div>
 
