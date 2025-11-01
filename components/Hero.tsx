@@ -55,9 +55,9 @@ export default function Hero() {
             variants={itemVariants}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900 dark:text-white"
           >
-            WordPress Developer & White-Label Partner for{' '}
+            WordPress Developer &{' '}
             <span className="bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">
-              Small Businesses & Agencies
+              White-Label Partner
             </span>
           </motion.h1>
 
