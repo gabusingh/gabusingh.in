@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import AnalyticsScripts from '@/components/AnalyticsScripts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -191,7 +192,10 @@ export default function RootLayout({
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AnalyticsScripts />
+        {children}
+      </body>
     </html>
   )
 }
